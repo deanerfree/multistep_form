@@ -36,7 +36,7 @@ export default function UserForm() {
 		}
 
 		axios
-			.post(`${process.env.API_CONNECTION}`, values)
+			.post(`${process.env.API_CONNECTION}/api/create`, values)
 			.then((resp) => {
 				if (resp.status === 200) {
 					setResponseData(resp)
