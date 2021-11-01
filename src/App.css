@@ -1,38 +1,45 @@
+body {
+	font-family: "Roboto";
+}
 .App {
-  text-align: center;
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+	display: flex;
+	/* justify-content: center; */
+	flex-direction: column;
+	width: 45vw;
+	height: 75vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.formWrapper {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fieldItem {
+	height: 70px;
+	/* padding: 10px; */
+	width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.formBody {
+	margin: 10px;
+	height: 63vh;
+	overflow: auto;
+	width: 44vw;
+	scroll-behavior: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonWrapper {
+	display: flex;
+	height: 10vh;
+	margin: 10px;
+	justify-content: space-around;
 }
