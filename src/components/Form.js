@@ -36,7 +36,7 @@ export default function UserForm() {
 		}
 
 		axios
-			.post(`${process.env.API_CONNECTION}`, values)
+			.post("https://scary-mummy-78928.herokuapp.com", values)
 			.then((resp) => {
 				if (resp.status === 200) {
 					setResponseData(resp)
