@@ -10,9 +10,8 @@ body {
 
 .wrapper {
 	display: flex;
-	/* justify-content: center; */
 	flex-direction: column;
-	width: 45vw;
+	/* width: 45vw; */
 	height: 75vh;
 }
 
@@ -25,21 +24,23 @@ body {
 
 .fieldItem {
 	height: 70px;
-	/* padding: 10px; */
+	margin: 12px;
 	width: 100%;
 }
 
 .formBody {
+	display: flex;
 	margin: 10px;
-	height: 63vh;
-	overflow: auto;
-	width: 44vw;
+	height: 500px;
+	max-height: 500px;
+	/* overflow: auto; */
 	scroll-behavior: auto;
+	justify-content: center;
 }
 
 .buttonWrapper {
 	display: flex;
-	height: 10vh;
+	height: 10px;
 	margin: 10px;
 	justify-content: space-around;
 }

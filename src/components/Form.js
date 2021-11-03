@@ -60,7 +60,7 @@ export default function UserForm() {
 		}
 	}
 	return (
-		<Card>
+		<Card style={{ maxHeight: "900px", padding: "12px" }}>
 			<ThemeProvider theme={theme}>
 				<CardContent className='wrapper'>
 					{activeStep === 3 ? (

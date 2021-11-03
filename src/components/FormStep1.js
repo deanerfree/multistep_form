@@ -44,6 +44,7 @@ export default function FormStep1() {
 				return (
 					<div className='fieldItem' key={index}>
 						<Field
+							theme={TextField}
 							type={fieldItem.type}
 							name={fieldItem.name}
 							label={fieldItem.label}

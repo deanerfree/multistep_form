@@ -3,16 +3,18 @@ import { createTheme } from "@material-ui/core/styles"
 export const theme = createTheme()
 
 theme.typography.h2 = {
-	fontSize: "1.2rem",
+	fontSize: "60px",
+	margin: "8px",
 	fontFamily: ["Roboto", "Helvetica", "Arial"].join(","),
 	fontWeight: 300,
 
 	"@media (max-width:800px)": {
 		fontSize: "40px",
+		margin: "8px",
 		fontWeight: 300,
 	},
 	[theme.breakpoints.up("md")]: {
-		fontSize: "70px",
+		fontSize: "60px",
 		fontWeight: 300,
 	},
 }
