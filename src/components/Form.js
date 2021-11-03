@@ -60,7 +60,7 @@ export default function UserForm() {
 		}
 	}
 	return (
-		<Card style={{ maxHeight: "900px", padding: "12px" }}>
+		<div className='mainCard'>
 			<ThemeProvider theme={theme}>
 				<CardContent className='wrapper'>
 					{activeStep === 3 ? (
@@ -75,7 +75,9 @@ export default function UserForm() {
 									<Box className='formBody'>{formStepper(activeStep)}</Box>
 									<Box>
 										{isSubmitting ? (
-											<CircularProgress />
+											<div className='buttonWrapper'>
+												<CircularProgress />
+											</div>
 										) : (
 											<div className='buttonWrapper'>
 												{activeStep === 0 ? null : (
@@ -102,6 +104,6 @@ export default function UserForm() {
 					)}
 				</CardContent>
 			</ThemeProvider>
-		</Card>
+		</div>
 	)
 }
